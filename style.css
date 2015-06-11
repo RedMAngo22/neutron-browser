@@ -1,0 +1,39 @@
+h1 {
+text-align: center;
+}
+body {
+  color: #ffffff;
+}
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -9999999;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -9999999;
+}
+::-webkit-scrollbar {
+    width: 9px !important;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-transition: all 0.25s ease !important;
+    background: rgba(75,75,75,0.5) !important;
+}
