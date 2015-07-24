@@ -4,16 +4,17 @@
 <title>Neutron</title>
  </head>
  <body>
-  <div id="tabbar" style="display: inline-block; width: 95%; height: 3%;"></div>
-  <div id="addressbar" style="display: inline-block; width: 100%; height: 6%;">
+  <div id="tabbar" style="display: inline-block; width: 95%; height: 35px;"></div>
+  <div id="addressbar" style="display: inline-block; width: 100%; height: 45px;">
     <form onsubmit="search()">
       <input id="searchbar" style="width: 70%;background: rgba(245,245,245,0.5);border: none;border-radius: 3px; font-size: 1.03em;margin-left: 4px;margin-top: 3px;">
       </input>
     </form>
   </div>
-<div id="">
-<webview src="http://electron.atom.io/" plugins>
-</webview>
+<div id="webviews" style="display: inline-block; width: 100%; height: 90%;">
+  <webview src="http://electron.atom.io/" plugins>
+  </webview>
+</div>
 <style>
 body {
   position: fixed;
@@ -29,11 +30,15 @@ body {
   width: 100%;
 }
 html {
-position: fixed;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+webview {
+  width: 100%;
+  height: 70%;
 }
 </style>
 <script src="ui.js">
